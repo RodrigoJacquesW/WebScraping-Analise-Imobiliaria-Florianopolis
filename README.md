@@ -1,6 +1,14 @@
 # 🏨 Web Scraping Análise Imobiliária De Florianópolis
-![Texto Alternativo](https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis/blob/main/Gráficos/Mapa%20de%20calor%20R%24%20por%20M²%20Apartamentos%20Florianópolis.PNG)
+![Mapa de Calor](https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis/blob/main/Gráficos/Mapa%20de%20calor%20R%24%20por%20M²%20Apartamentos%20Florianópolis.PNG)
 ## 💻 Sobre o Projeto
 Este projeto coleta informações de sites sobre imóveis em Florianópolis para desenvolver análises de valorização imobiliária. Utilizei web scraping para extrair dados do site Gralha Imóveis, gerei coordenadas geográficas a partir dos endereços e obtive a localização das praias da cidade. Com essas informações, calculei a distância de cada imóvel até a praia mais próxima e criei visualizações para identificar padrões de valorização. Além disso, desenvolvi um gráfico para analisar quais regiões possuem o metro quadrado mais caro da cidade.
 
-## 📊 Web Scrapping site Gralha Imóveis
+## 📊 Web Scrapping
+Para coletar as informações dos imóveis, foi desenvolvido um código em Python utilizando as bibliotecas Pandas e Requests. Esse código extrai dados como ID, tipo, valor de venda, bairro, cidade, estado, número de quartos, suítes, vagas, banheiros, área construída, endereço completo e URL. Como o web scraping não retorna coordenadas geográficas, utilizei a API do Geocode para obter a latitude e longitude dos imóveis, informações essenciais para as análises posteriores. 
+
+Para obter a localização exata das praias de Florianópolis, foi gerada uma lista com auxílio de inteligência artificial e utilizada a biblioteca geopy.geocoders do Python para obter suas coordenadas geográficas.
+
+## 📊 Distân
+Para calcular a distância entre os imóveis e a praia mais próxima, foi utilizado o método de Haversine, que mede a distância entre duas coordenadas geográficas. Primeiramente, os dados dos imóveis e das praias foram carregados e tratados, removendo inconsistências como valores inválidos de latitude e longitude. Em seguida, foi aplicada uma função que calcula a menor distância entre cada imóvel e todas as praias registradas. O resultado foi salvo em um novo arquivo CSV, adicionando a coluna "distancia_praia" ao dataset original.
+Para analisar a relação entre o preço médio do metro quadrado e a distância até a praia, foi criado um gráfico de dispersão onde cada ponto representa um imóvel. Além disso, foi adicionada uma linha de regressão para identificar a tendência geral dos preços. O resultado mostra uma relação negativa, indicando que, em média, imóveis mais próximos da praia tendem a ter um valor por metro quadrado mais alto, enquanto os mais distantes apresentam preços menores. Essa análise ajuda a visualizar o impacto da proximidade com o mar na valorização imobiliária em Florianópolis.
+![Gráfico Preço Médio x Distância](https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis/blob/main/Gráficos/Distância%20imoveis%20x%20praias%20com%20Linha%20de%20Tendência.py)
