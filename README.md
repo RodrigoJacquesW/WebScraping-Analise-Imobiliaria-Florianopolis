@@ -14,13 +14,15 @@ Para calcular a distância entre os imóveis e a praia mais próxima, foi utiliz
 Para analisar a relação entre o preço médio do metro quadrado e a distância até a praia, foi criado um gráfico de dispersão, onde cada ponto representa um imóvel. Além disso, foi adicionada uma linha de regressão para identificar a tendência geral dos preços. O resultado mostra uma relação negativa, indicando que, em média, imóveis mais próximos da praia tendem a ter um valor por metro quadrado mais alto, enquanto os mais distantes apresentam preços menores. Essa análise ajuda a visualizar o impacto da proximidade com o mar na valorização imobiliária em Florianópolis.
 ![Gráfico Preço Médio x Distância](https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis/blob/main/Gráficos/Gráfico%20de%20Preço%20médio%20x%20distância%20Praia%20com%20linha%20de%20regressão%20Linear.png)
 
-Embora a amostra não seja extremamente extensa, a linha de tendência reforça que, naturalmente, os imóveis localizados mais próximos das praias possuem um valor de metro quadrado mais elevado. Essa valorização pode ser explicada por diversos fatores, como:
--Valorização da Vista e Localização: Imóveis próximos ao mar oferecem vistas privilegiadas, fator que agrega valor significativo.
--Turismo e Demanda: Florianópolis é um destino turístico, aumentando a procura por imóveis perto das praias.
--Infraestrutura e Serviços: Áreas litorâneas costumam ter boa infraestrutura, como restaurantes, comércios e lazer.
--Oferta Limitada de Terrenos: A proximidade com o mar reduz a disponibilidade de terrenos, elevando os preços.
--Status e Exclusividade: Morar perto da praia é um diferencial desejado por muitas pessoas, aumentando a demanda.
--Acessibilidade e Transporte: Regiões valorizadas geralmente possuem melhor acesso a transporte público e vias estruturadas.
+Embora a amostra não seja extremamente extensa, a linha de tendência reforça que, naturalmente, os imóveis localizados mais próximos das praias possuem um valor de metro quadrado mais elevado. Essa valorização pode ser explicada por diversos fatores, como:  
+
+- **Valorização da Vista e Localização:** Imóveis próximos ao mar oferecem vistas privilegiadas, fator que agrega valor significativo.  
+- **Turismo e Demanda:** Florianópolis é um destino turístico, aumentando a procura por imóveis perto das praias.  
+- **Infraestrutura e Serviços:** Áreas litorâneas costumam ter boa infraestrutura, como restaurantes, comércios e lazer.  
+- **Oferta Limitada de Terrenos:** A proximidade com o mar reduz a disponibilidade de terrenos, elevando os preços.  
+- **Status e Exclusividade:** Morar perto da praia é um diferencial desejado por muitas pessoas, aumentando a demanda.  
+- **Acessibilidade e Transporte:** Regiões valorizadas geralmente possuem melhor acesso a transporte público e vias estruturadas.  
+
 
 ## 🌆 Preço Médio por Bairros
 ![Gráfico Preço Médio por Bairro](https://github.com/RodrigoJacquesW/WebScraping-Analise-Imobiliaria-Florianopolis/blob/main/Gráficos/Gráfio%20de%20R%24%20por%20M²%20Florianópolis.PNG)
@@ -31,14 +33,16 @@ Para aprofundar a análise imobiliária, foi criado um painel no Power BI que ex
 # Sobre os arquivos
 
 ## Ferramentas Utilizadas
-Power BI
-Python com as bibliotecas: 
-  geopy.geocoders
-  Pandas
-  Requests
-  matplotlib.pyplot
-  seaborn
-  haversine
+
+- **Power BI**  
+- **Python** com as bibliotecas:  
+  - `geopy.geocoders`  
+  - `pandas`  
+  - `requests`  
+  - `matplotlib.pyplot`  
+  - `seaborn`  
+  - `haversine`
+
 ## Ideias de complementações
 Incluir fatores que influenciam o mercado imobiliário: Incorporar dados como IDH dos bairros, acessibilidade e transporte público para entender melhor a valorização dos imóveis.
 Analisar outras tipologias: Expandir a análise para coberturas, terrenos e casas, verificando se o comportamento dos preços segue o mesmo padrão dos apartamentos.
