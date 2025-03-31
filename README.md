@@ -43,8 +43,10 @@ Para aprofundar a análise imobiliária, foi criado um painel no Power BI que ex
   - `seaborn`  
   - `haversine`
 
-## Ideias de complementações
-Incluir fatores que influenciam o mercado imobiliário: Incorporar dados como IDH dos bairros, acessibilidade e transporte público para entender melhor a valorização dos imóveis.
-Analisar outras tipologias: Expandir a análise para coberturas, terrenos e casas, verificando se o comportamento dos preços segue o mesmo padrão dos apartamentos.
-Relacionar padrões construtivos com os preços: Investigar se características como padrão de acabamento, idade do imóvel e infraestrutura influenciam os valores em diferentes regiões.
+## Ideias de complementações  
+
+- **Incluir fatores que influenciam o mercado imobiliário:** Incorporar dados como IDH dos bairros, acessibilidade e transporte público para entender melhor a valorização dos imóveis.  
+- **Analisar outras tipologias:** Expandir a análise para coberturas, terrenos e casas, verificando se o comportamento dos preços segue o mesmo padrão dos apartamentos.  
+- **Relacionar padrões construtivos com os preços:** Investigar se características como padrão de acabamento, idade do imóvel e infraestrutura influenciam os valores em diferentes regiões.  
+
 
