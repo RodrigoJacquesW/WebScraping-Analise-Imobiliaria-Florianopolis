@@ -4,7 +4,7 @@ import time
 
 # API de geocodificação
 API_URL = "https://geocode.maps.co/search"
-API_KEY = "67daedd5e0c78360890167ayt52c21b"
+API_KEY = "SUA KEY"
 
 # Carregar o CSV gerado
 df = pd.read_csv("25_03_19_imoveis.csv")
